@@ -8,4 +8,4 @@ touch $PIDFILE
 chown sensu:sensu $RUNDIR $PIDFILE
 chmod 755 $RUNDIR
 
-exec chpst -u sensu /opt/sensu/bin/sensu-server -d /etc/sensu -p $PIDFILE
+/opt/sensu/bin/sensu-server -d /etc/sensu -p $PIDFILE
